@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bav0ow3h4s7on"]
+
+[ext_resource type="Texture2D" uid="uid://c4n6ee4noie8g" path="res://东海湾.jpg" id="1_dt0so"]
+[ext_resource type="PackedScene" uid="uid://bp3c7uhpl7v1h" path="res://场景/动画树版.tscn" id="2_ilvsd"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MAP" type="Sprite2D" parent="."]
+texture = ExtResource("1_dt0so")
+
+[node name="动画树版" parent="." instance=ExtResource("2_ilvsd")]
+
+[node name="Camera2D" type="Camera2D" parent="动画树版"]
